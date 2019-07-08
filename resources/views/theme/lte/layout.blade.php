@@ -30,8 +30,58 @@
     </head>
     <!-- ADD THE CLASS layout-boxed TO GET A BOXED LAYOUT -->
     <body class="hold-transition skin-blue layout-boxed sidebar-mini">
-            <!-- Site wrapper -->
-            <div class="wrapper">
+        <!-- Site wrapper -->
+        <div class="wrapper">
+            <!-- Inicio Header -->
+            @include("theme/$theme/header");
+            <!-- Fin Header -->
+            <!-- Inicio Aside -->
+            @include("theme/$theme/aside");
+            <!-- Fin Aside -->
+            <div class="content-wrapper">
+                <!-- Conten Header (Page header) -->
+                <section class="content">
+                    <div class="callout callout-info">
+                        <h4>Tip!</h4>
+
+                        <p>Add the layout-boxed class to the body tag to get this layout. The boxed layout is helpful when working on
+                        large screens because it prevents the site from stretching very wide.</p>
+                    </div>
+
+                    <!-- Default box -->
+                    <div class="box">
+                        <div class="box-header with-border">
+                        <h3 class="box-title">Title</h3>
+                        <div class="box-tools pull-right">
+                            <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse">
+                            <i class="fa fa-minus"></i></button>
+                            <!--<button type="button" class="btn btn-box-tool" data-widget="remove" data-toggle="tooltip" title="Remove">
+                            <i class="fa fa-times"></i></button>-->
+                        </div>
+                        </div>
+                        <div class="box-body">
+                            Start creating your amazing application!
+                        </div>
+                        <!-- /.box-body -->
+                    </div>
+                    <!-- /.box -->
+                </section>
             </div>
+            <!-- Inicio Footer -->
+            @include("theme/$theme/footer");
+            <!--  Fin Footer -->                
+        </div>
+        <!-- jQuery 3 -->
+        <script src="{{asset("assets/$theme/bower_components/jquery/dist/jquery.min.js")}}"></script>
+        <!-- Bootstrap 3.3.7 -->
+        <script src="{{asset("assets/$theme/bower_components/bootstrap/dist/js/bootstrap.min.js")}}"></script>
+        <!-- SlimScroll -->
+        <script src="{{asset("assets/$theme/bower_components/jquery-slimscroll/jquery.slimscroll.min.js")}}"></script>
+        <!-- FastClick -->
+        <script src="{{asset("assets/$theme/bower_components/fastclick/lib/fastclick.js")}}"></script>
+        <!-- AdminLTE App -->
+        <script src="{{asset("assets/$theme/dist/js/adminlte.min.js")}}"></script>
+        <!-- AdminLTE for demo purposes -->
+        <script src="{{asset("assets/$theme/dist/js/demo.js")}}"></script>
     </body>
 </html>    

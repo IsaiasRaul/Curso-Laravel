@@ -1,4 +1,6 @@
 <?php
+/*use Symfony\Component\Routing\Route;*/
+use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -11,8 +13,4 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('permiso/{nombre}','PermisoController@index');
+Route::get('/', 'InicioController@index');
